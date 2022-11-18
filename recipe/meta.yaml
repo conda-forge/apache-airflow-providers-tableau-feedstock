@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-tableau" %}
-{% set version = "3.0.1" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-tableau-{{ version }}.tar.gz
-  sha256: 83392047d591d4d60f47388afd677979b94ea0fd74d42598f9b6ad51069242d5
+  sha256: 63d486be4c689928fa4c84bdfb9c1c7b09d1927901b9e2925641441de63ab3a5
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >=3.7
-    - apache-airflow >=2.2.0
+    - apache-airflow >=2.3.0
     - tableauserverclient
 
 test:
