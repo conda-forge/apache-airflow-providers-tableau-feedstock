@@ -1,13 +1,13 @@
 {% set name = "apache-airflow-providers-tableau" %}
-{% set version = "4.3.0" %}
+{% set version = "4.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-tableau-{{ version }}.tar.gz
-  sha256: 6e55f8b0ee72be311e12a8d89bef49dd1d518cf6333ae0843f906f239a486b40
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 855885a5ad1808befc1aa275c90ea7fa8399ca41efda46fbc562d29eb69983e9
 
 build:
   noarch: python
