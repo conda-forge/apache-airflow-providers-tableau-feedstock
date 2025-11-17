@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-tableau" %}
-{% set version = "5.2.1" %}
+{% set version = "5.2.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_tableau-{{ version }}.tar.gz
-  sha256: 7208a2ac682fe0fbdf23b876715c67d1c9477c1ec2a596a1b0e879e56468c461
+  sha256: 77b61a2e80f92691ade71b9c521e08c4d232ceb4acdb248f8ad04d2649b0cd8a
 
 build:
   noarch: python
@@ -39,7 +39,9 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-tableau for Apache Airflow
   license: Apache-2.0
-  license_file: src/airflow/providers/tableau/LICENSE
+  license_file: 
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-tableau/stable/index.html
   dev_url: https://github.com/apache/airflow/
