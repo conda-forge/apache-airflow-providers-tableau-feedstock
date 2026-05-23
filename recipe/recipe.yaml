@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-tableau
-  version: "5.4.0"
+  version: "5.4.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_tableau-${{ version }}.tar.gz
-  sha256: f367dc84f9dd8c3f7f1101c45e11251897e46588ce8425b09bce5e8c8098c8de
+  sha256: 559e2907d3a9152df9d3d04040f6fb509ca98909878fb957ddb8c10d24732ba1
 
 build:
   noarch: python
